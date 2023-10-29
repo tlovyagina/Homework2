@@ -13,4 +13,31 @@ public class DiscountsOnShirtsCalculator {
     private final float amountMoneySaved = totalPriceShirtsWithoutDiscount + totalPriceAddShirtsForDiscount - discountedPricesForAllShirts;
     private final float freeShirtCount = amountMoneySaved / priceOneShirtWithoutDiscount;
 
+    public short getAddShirtsForDiscountCount() {
+        return addShirtsForDiscountCount;
+    }
+
+    public int getTotalPriceShirtsWithoutDiscount() {
+        return totalPriceShirtsWithoutDiscount;
+    }
+
+    public int getTotalPriceAddShirtsForDiscount() {
+        return totalPriceAddShirtsForDiscount;
+    }
+
+    public float getDiscountedPricesForAllShirts() {
+        return discountedPricesForAllShirts;
+    }
+
+    public float getDiscountedPriceForOneShirt() {
+        return discountedPriceForOneShirt;
+    }
+
+    public float getAmountMoneySaved() {
+        return amountMoneySaved;
+    }
+
+    public float getFreeShirtCount() {
+        return freeShirtCount;
+    }
 }

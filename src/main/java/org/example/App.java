@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.buratinotask.BuratinosApples;
+import org.example.discountonshirtstask.DiscountsOnShirtsCalculator;
 import org.example.employeescounttask.EmployeesCalculator;
 import org.example.glasstask.GlassValue;
 import org.example.mortgagetask.MortgageDownPayment;
@@ -42,6 +43,15 @@ public class App {
         TravelTime travelTime = new TravelTime();
         System.out.println("Время, за которое тестировщик добирается вечером на такси с работы домой: " + travelTime.getTimeFromOfficeToHome() + "ч");
         System.out.println();
+
+        DiscountsOnShirtsCalculator discountsOnShirtsCalculator = new DiscountsOnShirtsCalculator();
+        System.out.println("Количество рубашек, которые надо добавить к купленным, чтобы получить скидку: " + discountsOnShirtsCalculator.getAddShirtsForDiscountCount());
+        System.out.println("Общая цена уже выбранных рубашек без скидки: " + discountsOnShirtsCalculator.getTotalPriceShirtsWithoutDiscount());
+        System.out.println("Общая цена рубашек (без скидки), которые надо докупить, чтобы получить скидку: " + discountsOnShirtsCalculator.getTotalPriceAddShirtsForDiscount());
+        System.out.println("Цена всех рубашек со скидкой: " + discountsOnShirtsCalculator.getDiscountedPricesForAllShirts());
+        System.out.println("Цена одной рубашки со скидкой: " + discountsOnShirtsCalculator.getDiscountedPriceForOneShirt());
+        System.out.println("Количество сэкономленных денег, если рубашки куплены со скидкой: " + discountsOnShirtsCalculator.getAmountMoneySaved());
+        System.out.println("Количество рубашек, которые из-за скидки считай получены на халяву: " + discountsOnShirtsCalculator.getFreeShirtCount());
 
     }
 }
