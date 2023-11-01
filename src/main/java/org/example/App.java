@@ -9,9 +9,6 @@ import org.example.sarumantask.Armies;
 import org.example.traveltimetask.TravelTime;
 import org.example.universeagetask.UniverseAge;
 
-/**
- * Hello world!
- */
 public class App {
     public static void main(String[] args) {
         BuratinosApples buratinosApples = new BuratinosApples();
